@@ -4,8 +4,6 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: aws
-    container: 
-      image: amazon/aws-cli:2.13.11
     steps:
       - run: echo "🎉 Run on docker node "
       - run: aws sts get-caller-identity 
